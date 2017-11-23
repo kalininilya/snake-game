@@ -39,7 +39,6 @@ const initialState = {
 };
 
 const reducer = (state = initialState, action) => {
-  console.log(action)
   switch (action.type) {
     case START_GAME:
       return { ...initialState, isStarted: true };
@@ -96,8 +95,10 @@ export const start = () => {
     const tick = () => {
       setTimeout(() => {
         if (getState().isStarted) {
-          dispatch(move()); tick();
+          dispatch(move());
+          tick();
         }
+        // tslint:disable-next-line:align
       }, 300);
     };
     if (!getState().isStarted) {
