@@ -1,0 +1,61 @@
+.App {
+  text-align: center;
+  margin: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.controls {
+  margin-bottom: 50px;
+}
+
+.button {
+  background: none;
+  padding: 3px 15px;
+  font-size: 20px;
+  outline: none;
+}
+
+.startButton {
+  margin-right: 40px;
+  background: none;
+  padding: 3px 15px;
+  font-size: 20px;
+  outline: none;
+}
+
+.boardSize {
+  margin: 0 15px;
+}
+
+.board {
+  border: 1px solid black;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+  background-color: #eee;
+  margin: 1px;
+  border-radius: 3px;
+}
+
+.snakeCell {
+  width: 30px;
+  height: 30px;
+  margin: 1px;
+  border-radius: 3px;
+  background-color: lightgreen;
+}
+
+.foodCell {
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+  margin: 1px;
+  background-color: red;
+}
