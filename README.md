@@ -1,3 +1,3 @@
-```install: yarn install```
+install: ```yarn install```
 
-```run: yarn start```
+run: ```yarn start```
